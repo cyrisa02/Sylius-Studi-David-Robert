@@ -1,0 +1,13 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block content %}
+
+<h1>Bonjour Cyril templates/bundles/SyliusShopBundle/Homepage/index</h1>
+    <div class="homepage">
+        <div class="ui hidden divider"></div>
+
+        <h2>{{message}}</h2>
+
+        {{ sylius_template_event('sylius.shop.homepage') }}
+    </div>
+{% endblock %}
